@@ -1,0 +1,1938 @@
+commit 87896eedf5453f8af695a5f0138fe750fb714e1f
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 30 12:15:33 2019 +0100
+
+    Petit free oublié
+
+ src/queue.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f26431d8fb04e53222717a4360218c960169361a
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 30 12:14:01 2019 +0100
+
+    main prend pas en compte quand pas assez d'arguments
+
+ .gitignore |  2 ++
+ Makefile   |  2 +-
+ src/main.c | 17 +++++------------
+ 3 files changed, 8 insertions(+), 13 deletions(-)
+
+commit 438333e91dbf77fa3d0fd6b35bd396d7ec15c496
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 30 12:07:20 2019 +0100
+
+    free tests
+
+ tests/test.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 18b3778b55c234ec4f2bd5abd11026bda1d8e88e
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 30 11:46:20 2019 +0100
+
+    Ajout de tests
+
+ tests/test.c | 45 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 45 insertions(+)
+
+commit 43b29a13739d66290b27839ad300a89d8589157c
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 30 11:25:59 2019 +0100
+
+    Gitignore
+
+ .gitignore | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit aad8e9a823639c70545608c9e0ee3106fe75941f
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 30 11:23:49 2019 +0100
+
+    Calisse
+
+ .gitignore   | 3 +--
+ tests/test.c | 1 +
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit ec6d43c7689a4ec09f10f32b5511cf06b3711a8c
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 30 09:13:25 2019 +0100
+
+    -l -t 3600
+
+ Makefile      |  1 +
+ README.md     | 40 +++++++++++++++++++++++++++++++++++++++-
+ src/main.c    | 12 ++++++++++--
+ src/queue.c   |  3 ++-
+ src/queue.h   |  1 +
+ src/receive.c |  2 +-
+ 6 files changed, 54 insertions(+), 5 deletions(-)
+
+commit 191bc6c03420d31728edde48154c1cb2e5b0b2cd
+Author: Ben Delcoigne <ben.delcoigne@gmail.com>
+Date:   Wed Oct 30 08:32:39 2019 +0100
+
+    Create LICENSE
+
+ LICENSE | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+commit 6ac846baca11eb444fa11845d19c383c404da50d
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 26 15:10:31 2019 +0200
+
+    Test statistics
+
+ tests/TRTP_Time_Statistics.xlsx | Bin 0 -> 15485 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 420edac094688c475b27841b3334c8a8a76a434e
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 26 10:45:24 2019 +0200
+
+    Changement de -w {0,1} en -w
+
+ src/main.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 38f1ee4f1feeedeb1503daa79bd9cc768439fda0
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 26 10:42:50 2019 +0200
+
+    Ajout de l'argument -w pour l'executable (adapt window)
+
+ src/main.c    |  14 ++++++++------
+ src/queue.c   |   2 +-
+ src/queue.h   |   1 +
+ src/receive.c |   3 ++-
+ src/receive.h |   2 +-
+ énoncé.pdf  | Bin 460535 -> 426681 bytes
+ 6 files changed, 13 insertions(+), 9 deletions(-)
+
+commit a1c788c815e20551386570ae418284b8b4beca54
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 26 10:31:01 2019 +0200
+
+    variable window size
+
+ src/queue.c | 46 ++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 44 insertions(+), 2 deletions(-)
+
+commit af458bd29a847e71369ea756210af11e31581b9c
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Fri Oct 25 10:01:38 2019 +0200
+
+    Timeout solved. -c 10, -l 10 ok on small files
+
+ src/receive.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 21a5be9cf8e5a1108c29148f3ef345d43670bdaf
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 24 19:49:45 2019 +0200
+
+    Done cutoff et loss de 5% ok
+
+ src/queue.c   | 32 +++++++++++++++++++++-----------
+ src/receive.c |  5 +++--
+ 2 files changed, 24 insertions(+), 13 deletions(-)
+
+commit fa82c008857d4c085f1f736fac2069b854211535
+Author: Romain Graux <rgraux@yoda.info.ucl.ac.be>
+Date:   Thu Oct 24 15:35:29 2019 +0200
+
+    Fully functionnal
+
+ src/queue.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d0a6a4f2d8c953a6e903a2044aabc6e9df562bbc
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 24 15:25:20 2019 +0200
+
+    Shania est la meilleure chanteuse de variété
+
+ src/queue.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit b6fecb5da6b236372f20cb24c71181406b5b1761
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 24 15:22:57 2019 +0200
+
+    oupsi
+
+ src/queue.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e39f5887d9b0e5540b61b15a748176ef7afc1717
+Merge: 2663b15 fdc5cc7
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 24 15:21:31 2019 +0200
+
+    Merge branch 'master' of https://github.com/RomainGrx/TRTP-Project
+
+commit 2663b1523936fb39db7afc56b1a3e24ce29e4ef6
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 24 15:21:28 2019 +0200
+
+    Test open File et 777
+
+ src/queue.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+commit fdc5cc7b5fb75a4db9c828651a9925073c592a03
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 24 15:19:04 2019 +0200
+
+    Test open File et 777
+
+ src/queue.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+commit 2f17e8edb427368d22b21f4b845bbfdf92c79ba6
+Author: Ben Delcoigne <delcoigneb@chewbacca.info.ucl.ac.be>
+Date:   Thu Oct 24 15:03:40 2019 +0200
+
+    ShaniaTwain
+
+ shaniatwain/sender     | Bin 0 -> 35024 bytes
+ shaniatwain/shania.jpg | Bin 0 -> 56247 bytes
+ shaniatwain/texte.txt  |   1 +
+ 3 files changed, 1 insertion(+)
+
+commit ca543650ec1c814aa2c5db069702cfdd5a909e20
+Author: Ben Delcoigne <delcoigneb@maul.info.ucl.ac.be>
+Date:   Tue Oct 22 17:46:25 2019 +0200
+
+    Natacha
+
+ src/queue.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fa24f845f6dd9307ec371803850b3b1f94820303
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 22 17:31:51 2019 +0200
+
+    Ben ben comme il faut, fuck la police pis les devoirs
+
+ src/queue.c   | 6 +++---
+ src/receive.c | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit a5978e0e568abdf63ecf8d6538209192abc152eb
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 22 17:27:25 2019 +0200
+
+    Open, write, close : tabarnac ça fonctionne, un fichier en trop
+
+ src/queue.c   | 75 ++++++++++++++++++++++++++++++++++++++++-------------------
+ src/queue.h   |  2 +-
+ src/receive.c |  2 +-
+ 3 files changed, 53 insertions(+), 26 deletions(-)
+
+commit d9672b16b27f85ca68dd65670e71a94ca663e339
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 14:36:02 2019 +0200
+
+    Plus de invalid read(). Valgrind est très content
+
+ src/main.c | 15 ++-------------
+ 1 file changed, 2 insertions(+), 13 deletions(-)
+
+commit eb032d0e26510a72c4231cba6cb9936726755c35
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 14:32:24 2019 +0200
+
+    Sefgault résolue.
+
+ src/receive.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b4c72e6c84ab40fcf53649c62a91b5e28acd3eb8
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 14:26:55 2019 +0200
+
+    Segfault quand realloc()si on a free le dernier client et on en remet un
+
+ src/main.c    | 8 +++++---
+ src/receive.c | 2 +-
+ 2 files changed, 6 insertions(+), 4 deletions(-)
+
+commit 6f70afbe7f6332b655bc4b1d3cbcffcc5add743b
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 14:16:27 2019 +0200
+
+    Timeout comme il faut,Segfault quand je finis en local et recommence
+
+ src/queue.c   | 3 +--
+ src/receive.c | 9 +++++----
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 03b995e06ac4516bc425d0c54e47fd9feed8337b
+Author: Romain Graux <rgraux@palpatine.info.ucl.ac.be>
+Date:   Tue Oct 22 13:09:53 2019 +0200
+
+    Ben ben comme il faut avec rearange_tabs
+
+ receiver    | Bin 0 -> 43632 bytes
+ src/queue.c |   6 +++++-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 2651ad8eb9bcfac15ba6c75c35526654a8ba23a4
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 12:59:04 2019 +0200
+
+    rearange tabs implemented
+
+ src/queue.c   | 80 ++++++++++++++++++++++++++++-------------------------------
+ src/receive.c |  2 +-
+ 2 files changed, 39 insertions(+), 43 deletions(-)
+
+commit 4ca35f45bc34490c4d8ee5501b84c4be7a931868
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 22 12:48:55 2019 +0200
+
+    Ajout de la fonction rearange_tabs et de la variables extern nb_file
+
+ src/practice.c | 33 +++++++++++++++++++++++++-
+ src/queue.c    | 74 +++++++++++++++++++++++++++++++++++++---------------------
+ src/queue.h    |  7 ++++++
+ 3 files changed, 87 insertions(+), 27 deletions(-)
+
+commit a2118eb85398783065c2ee7c4607a54735920a76
+Merge: e996624 c4eecfd
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 22 11:58:00 2019 +0200
+
+    Merge branch 'experimental-Ben' into experimental-Romain
+
+commit e9966248b1676a0aae2bddee51849a8d0ecd2224
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 22 11:32:45 2019 +0200
+
+    fd Variables globales externes dans queue.h
+
+ src/queue.c   | 21 +++++++++++++++++++++
+ src/queue.h   | 19 +++++++++++++++++++
+ src/receive.c | 24 ++----------------------
+ src/receive.h | 14 --------------
+ 4 files changed, 42 insertions(+), 36 deletions(-)
+
+commit c4eecfd34e5c15b525f6a8af949ab65dbe6c7710
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 11:17:07 2019 +0200
+
+    print
+
+ src/receive.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit fad9c6c8eb6a99ecf788534044704d1a40a1dc55
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 11:07:59 2019 +0200
+
+    Init queue
+
+ src/receive.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit d5615e4f3396da2fcec52c1ba099dbf7804bd035
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 10:36:29 2019 +0200
+
+    Close file error
+
+ src/queue.c | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 145725d765d439c47174458f3905cbf33fe7f168
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 22 10:10:35 2019 +0200
+
+    Tsk fck les devoirs (remove file descriptor)
+
+ src/queue.c   |  3 ---
+ src/receive.c | 15 ++-------------
+ 2 files changed, 2 insertions(+), 16 deletions(-)
+
+commit 508bb6a5fff2de6d938c386f9415d9ff61d70c15
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 21 17:22:42 2019 +0200
+
+    Débuggage présumé de connections concurrentes
+
+ src/queue.c   | 15 +++++++--------
+ src/receive.c | 21 +++++++++++----------
+ 2 files changed, 18 insertions(+), 18 deletions(-)
+
+commit 978ca012a811f8549a0f5440a0644b427a1646ac
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 21 15:59:04 2019 +0200
+
+    Queue adds a dimension when new client
+
+ src/main.c    |  2 +-
+ src/queue.h   |  3 ++-
+ src/receive.c | 11 +++++++----
+ 3 files changed, 10 insertions(+), 6 deletions(-)
+
+commit 5f46905ec611d597d87955fb2fd167c734d3c03d
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 21 12:27:46 2019 +0200
+
+    First soumission Inginious 22/10
+
+ Latex/main.aux                  |  10 --
+ Latex/main.log                  | 387 ----------------------------------------
+ Latex/main.pdf                  | Bin 41436 -> 0 bytes
+ Latex/{main.tex => rapport.tex} |   4 +-
+ Makefile                        |  16 +-
+ src/main.c                      |  10 +-
+ src/packet.c                    |   2 +
+ src/packet.h                    |   2 +
+ src/receive.c                   |  26 +--
+ 9 files changed, 23 insertions(+), 434 deletions(-)
+
+commit 04b460aac5a6085eae0287bb8addecd49e84a63f
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 21 11:46:26 2019 +0200
+
+    J'ai retiré tous les print
+
+ src/queue.c   | 20 +++++++++-----------
+ src/queue.h   |  1 +
+ src/receive.c | 11 ++++++-----
+ 3 files changed, 16 insertions(+), 16 deletions(-)
+
+commit 026faa2a5911033d1c0b09e6a805514108da8a19
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 21 11:26:57 2019 +0200
+
+    007 James bond
+
+ src/receive.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e3f7432aacdcabe09db3d9a5f3c176e96ad09562
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 21 11:24:38 2019 +0200
+
+    Plus de leaks
+
+ src/packet.c   |  1 -
+ src/practice.c |  4 ++--
+ src/queue.c    | 28 +++++++++++++++-------------
+ src/receive.c  |  8 ++++----
+ 4 files changed, 21 insertions(+), 20 deletions(-)
+
+commit 9f99054fd45583b17eab534c6b345585e0b15955
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 21 11:11:10 2019 +0200
+
+    8 free's pas faits
+
+ src/main.c     |  4 +---
+ src/packet.c   | 30 ++++++++++++++++--------------
+ src/practice.c |  2 --
+ 3 files changed, 17 insertions(+), 19 deletions(-)
+
+commit 7fbad027154406175a9f729fd3a942634c7c0141
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sun Oct 20 14:49:46 2019 +0200
+
+    Erreur valgrind sur le bind résolue
+
+ src/receive.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit b89b8e044c67700a7ac5b92013c4cb0b6a2fab64
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sun Oct 20 14:36:48 2019 +0200
+
+    Tex concurrent
+
+ Latex/main.tex | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 9980bedde585454e4db476a464d9c698579f7615
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sun Oct 20 11:47:12 2019 +0200
+
+    [TEX] Selective repeat et ack
+
+ Latex/main.tex | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit 64f8d69a789a83e81974e98c5707eeca480f690f
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sun Oct 20 11:05:50 2019 +0200
+
+    Latex
+
+ Latex/main.aux |  10 ++
+ Latex/main.log | 387 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Latex/main.pdf | Bin 0 -> 41436 bytes
+ Latex/main.tex |  44 ++++++-
+ src/queue.c    |   4 -
+ 5 files changed, 439 insertions(+), 6 deletions(-)
+
+commit 05314e7d683b380e17624b9ede7b3bcae94d1f55
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sun Oct 20 10:15:25 2019 +0200
+
+    tests ok
+
+ src/practice.c |  3 ---
+ tests/test.c   | 41 +++++++++++++++++++++--------------------
+ 2 files changed, 21 insertions(+), 23 deletions(-)
+
+commit 46ddb853fa8f96cf36c3442ebcb028253238b743
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sun Oct 20 10:05:25 2019 +0200
+
+    Ajout de la cible tests dans le makefile et main dans test (free)
+
+ Makefile                         |  37 +++++++++++++++++++++-----
+ socket_tutorials/client          | Bin 8792 -> 0 bytes
+ socket_tutorials/client.c        |  49 ----------------------------------
+ socket_tutorials/gclient.c       |  50 -----------------------------------
+ socket_tutorials/gserv.c         |  41 -----------------------------
+ socket_tutorials/implementer.txt |  17 ------------
+ socket_tutorials/serv            | Bin 8664 -> 0 bytes
+ socket_tutorials/server          | Bin 12888 -> 0 bytes
+ socket_tutorials/server.c        |  55 ---------------------------------------
+ src/packet.c                     |  12 ++++-----
+ tests/test.c                     |  17 +++++++-----
+ 11 files changed, 47 insertions(+), 231 deletions(-)
+
+commit 2f2eb871d5328e8dfde5535a6e4f3409349f395f
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 19 19:02:27 2019 +0200
+
+    Calisse: permission changé pour le fichier de sortie
+
+ packets/packet1 | Bin 0 -> 35 bytes
+ packets/packet2 | Bin 0 -> 29 bytes
+ packets/packet3 | Bin 0 -> 11 bytes
+ src/practice.c  |  69 +-------------------------------------------------------
+ src/receive.c   |   2 +-
+ 5 files changed, 2 insertions(+), 69 deletions(-)
+
+commit b86f513dee681c76d12d9cd6125fff23fa64ea3e
+Merge: 8f8e98c dda15b6
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 18:52:55 2019 +0200
+
+    Merge branch 'master' of https://www.github.com/RomainGrx/TRTP-Project
+
+commit 8f8e98cad4efe5a1fc5923a70725f1942172e65e
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 18:52:40 2019 +0200
+
+    Pouf patapouf
+
+ src/packet.c | 2 +-
+ src/queue.c  | 5 +++--
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+commit dda15b695ae67be959e1431da6c60d210ae2b4f2
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 18:49:53 2019 +0200
+
+    Ma meuf a joui pendant un cunnilingus.
+
+ src/practice.c | 4 ++--
+ src/queue.c    | 5 +++--
+ 2 files changed, 5 insertions(+), 4 deletions(-)
+
+commit a901b07659c6e558591f0c698f414e5c518527bd
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 19 18:24:16 2019 +0200
+
+    J'ai du bombay saphire pour les 24h
+
+ src/receive.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 58d3b4d77ce548cbc611da97788764277987b936
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 15:36:49 2019 +0200
+
+    Erreurs receive
+
+ src/receive.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit b3d6f2fcba78eeb5d8822c21077575805103941c
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 15:33:56 2019 +0200
+
+    errors in queue.c
+
+ src/packet.c |  1 +
+ src/queue.c  | 93 ++++++++++++++++++++++++++++++------------------------------
+ 2 files changed, 48 insertions(+), 46 deletions(-)
+
+commit e4e4c76fcec1a2bd552244425428baed635622d0
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 19 13:00:52 2019 +0200
+
+    Ajout de la fonction packet write dans practice
+
+ packets/packet0 | Bin 0 -> 41 bytes
+ src/practice.c  |  72 +++++++++++++++++++++++---------------------------------
+ src/receive.c   |   1 -
+ 3 files changed, 29 insertions(+), 44 deletions(-)
+
+commit 060c561e9056889154f6e77c0151997496aa87c9
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 12:35:12 2019 +0200
+
+    Fermeture de connection oké mon frerot
+
+ src/queue.c   | 2 ++
+ src/queue.h   | 1 +
+ src/receive.c | 4 ++--
+ 3 files changed, 5 insertions(+), 2 deletions(-)
+
+commit a565843ea69482acd4962385b25fd32079bf3764
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 19 12:30:59 2019 +0200
+
+    duplicated file_descriptors
+
+ src/main.c    | 3 ---
+ src/receive.c | 5 +----
+ 2 files changed, 1 insertion(+), 7 deletions(-)
+
+commit e5cd52b948f1e78868f796e3316c8fb4f850d20c
+Merge: e31f037 38f4953
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 12:27:15 2019 +0200
+
+    Merge branch 'experimental-Ben'
+
+commit e31f0379856b6bc3194de04f20478c989530e81b
+Merge: e929319 9c95b19
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 12:25:47 2019 +0200
+
+    Merge branch 'master' of https://www.github.com/RomainGrx/TRTP-Project
+
+commit e929319a3a93cd1884f25cfcdd6fd5a46dadd787
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 12:25:34 2019 +0200
+
+    init queue
+
+ src/receive.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 9c95b19294c7692e07110b6b716aef837b0e44ab
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 19 12:17:19 2019 +0200
+
+    MAIN avec segmentation fault
+
+ Makefile      | 4 ++--
+ src/main.c    | 9 ++++-----
+ src/receive.h | 6 ------
+ 3 files changed, 6 insertions(+), 13 deletions(-)
+
+commit d601759299638c85c66dfa714f85c518a809e9fb
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 19 12:01:53 2019 +0200
+
+    MAX two cases handled
+
+ src/receive.c | 47 +++++++++++++++++++++--------------------------
+ 1 file changed, 21 insertions(+), 26 deletions(-)
+
+commit 38f4953431fea69d4cddadc714b210647eea31d0
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 19 11:47:27 2019 +0200
+
+    Fermeture de connection
+
+ src/main.c    |  1 -
+ src/queue.c   | 45 +++++++++++++++++++++++++++------------------
+ src/receive.c |  7 +++++--
+ 3 files changed, 32 insertions(+), 21 deletions(-)
+
+commit 4e222c972f982e44dcc8fec098b5d9a334e09ef0
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 17 18:30:55 2019 +0200
+
+    data_ind avec write classique dans le fichier de sortie
+
+ src/queue.c   | 5 +++--
+ src/queue.h   | 3 ++-
+ src/receive.c | 6 +++---
+ src/receive.h | 2 +-
+ 4 files changed, 9 insertions(+), 7 deletions(-)
+
+commit a9b7c95368ed54bd714035f613a2a2ef09878240
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 17 17:50:59 2019 +0200
+
+    open et close les files
+
+ src/practice.c |  2 +-
+ src/receive.c  | 43 ++++++++++++++++++++++++++++---------------
+ src/receive.h  |  6 ++++--
+ 3 files changed, 33 insertions(+), 18 deletions(-)
+
+commit 42e403cf21fa715e24f383c8e675810c3480f3b1
+Merge: 858d105 6c2d67a
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 17 17:20:38 2019 +0200
+
+    Merge branch 'experimental-Romain' of https://github.com/RomainGrx/TRTP-Project into experimental-Romain
+
+commit 858d105762e6428323f48b7538f42c9fa495032c
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 17 16:08:05 2019 +0200
+
+    Free déplacés
+
+ src/practice.c | 85 +++++++++++++++++++++++++++++-----------------------------
+ src/receive.c  |  3 +++
+ 2 files changed, 45 insertions(+), 43 deletions(-)
+
+commit 60c975151c4b2c92a0f0c1f40d629cdbcb301a89
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 17 15:59:45 2019 +0200
+
+    Memset buffer
+
+ src/queue.c   | 1 -
+ src/receive.c | 2 ++
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 6c2d67a9e88973cc96feba10a7f5636ee7d11060
+Merge: f3b9785 b5fb103
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 17 14:52:51 2019 +0200
+
+    Merge branch 'experimental-Romain' of https://github.com/RomainGrx/TRTP-Project into experimental-Romain
+
+commit f3b9785a481028c38f28f0953d8fdaa2c953c1c8
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 17 14:42:45 2019 +0200
+
+    int err unused
+
+ src/practice.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit d0738ce9934095f479d29226abf7aa876e129249
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 17 14:42:22 2019 +0200
+
+    Ajout de -Wall et -Werror
+
+ Makefile | 17 +++++++++--------
+ 1 file changed, 9 insertions(+), 8 deletions(-)
+
+commit d1deccb907c9647837b453dda7413c5e4758fcca
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 17 14:38:31 2019 +0200
+
+    Shania twain
+
+ src/queue.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit 005aa0ac4f77ba3acd0db94465abc2613ac7d699
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 17 14:37:11 2019 +0200
+
+    Sending socket now
+
+ src/queue.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit bccfa192a917633d239cb0975b482c41570a956e
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 17 14:29:55 2019 +0200
+
+    Ack OK - how to handle end?
+
+ src/queue.c   | 10 ++++++++--
+ src/receive.c | 14 ++++++++------
+ 2 files changed, 16 insertions(+), 8 deletions(-)
+
+commit c075887841074d1ff76e2f57f69a633705c7a830
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 17 13:49:18 2019 +0200
+
+    Variables globales pour les FD
+
+ src/queue.c   |  5 +++++
+ src/queue.h   |  3 +++
+ src/receive.c | 10 +++++-----
+ 3 files changed, 13 insertions(+), 5 deletions(-)
+
+commit efd3d9ce5d286eb0c2df9a016196663dfc858581
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 17 13:24:53 2019 +0200
+
+    Change name packet
+
+ Makefile                             | 4 ++--
+ src/main.c                           | 2 +-
+ src/{packet_implem.c => packet.c}    | 2 +-
+ src/{packet_interface.h => packet.h} | 0
+ src/practice.c                       | 2 +-
+ src/queue.c                          | 2 +-
+ src/receive.c                        | 4 ++--
+ src/sender.c                         | 2 +-
+ 8 files changed, 9 insertions(+), 9 deletions(-)
+
+commit 893422399e8469fb366ec641d8b18c2b87cfe0d7
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 16 18:43:51 2019 +0200
+
+    Beta 1. manque l'envoi de ack, mais paquets ack ready.
+
+ src/practice.c | 14 +++++---------
+ src/queue.c    | 41 +++++++++++++++++++++++++++++------------
+ src/queue.h    |  2 +-
+ src/receive.c  | 12 +++++++-----
+ 4 files changed, 42 insertions(+), 27 deletions(-)
+
+commit 59d22f1d126f2452e40cfdf77fb59f55f530df84
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 16 18:17:35 2019 +0200
+
+    Associative sockets work
+
+ src/receive.c  | 153 +++++++++++++++++++--------------------------------------
+ src/stderr.txt |   1 -
+ 2 files changed, 51 insertions(+), 103 deletions(-)
+
+commit 8f0f899f290a4998f1145ff6154bb071cd113ade
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 16 17:32:18 2019 +0200
+
+    ---------Backup before big changes----
+
+ src/receive.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f761d0398901fefdd9e76575f39deba558a491ce
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 16 17:27:19 2019 +0200
+
+    Can't bind twice on same port
+
+ src/practice.c |   2 +-
+ src/receive.c  | 102 ++++++++++++++++++++++++++++-----------------------------
+ src/stderr.txt |   1 +
+ 3 files changed, 53 insertions(+), 52 deletions(-)
+
+commit 8c51a16cd3db6d64d324ed3d16502f0c16c01355
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 16 17:14:21 2019 +0200
+
+    Create_master_socket()
+
+ src/receive.c | 36 ++++++++++++++++++++++--------------
+ 1 file changed, 22 insertions(+), 14 deletions(-)
+
+commit 88435caa0ecbbaffcaddf518bbb9f10e13dfb191
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 16 16:28:21 2019 +0200
+
+    First socket version
+
+ src/practice.c |  58 +++++++++++----------
+ src/receive.c  | 160 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/receive.h  |   4 ++
+ 3 files changed, 195 insertions(+), 27 deletions(-)
+
+commit b5fb103e8ae62a83ea6a06463dc77b306ac9f7ec
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 16 12:46:26 2019 +0200
+
+    Traitement de fichier de sortie avec un tableau contenant les file descriptor aux indices des clients
+
+ .gitignore    |  2 +-
+ src/main.c    | 35 +++++++++++++++++++----------------
+ src/receive.c | 47 ++++++++++++++++++++++++++++++++++++++++++++---
+ src/receive.h | 32 ++++++++++++++++++++++++++++++--
+ 4 files changed, 94 insertions(+), 22 deletions(-)
+
+commit 1e0582d3d0ffb1eecac151580fe35169121aa1a8
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 16 09:13:39 2019 +0200
+
+    Mis à jour du makefile
+
+ Makefile       | 6 +++---
+ src/practice.c | 6 +++++-
+ 2 files changed, 8 insertions(+), 4 deletions(-)
+
+commit 0b03f0ee144f403083f498a453ce8145ae0c6c0d
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 15 10:37:15 2019 +0200
+
+    souci du retour à 0 resolu
+
+ src/queue.c | 17 ++++++++++++-----
+ 1 file changed, 12 insertions(+), 5 deletions(-)
+
+commit 3713377f14c500d79133c017525c99f763c29dd5
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 15 10:08:25 2019 +0200
+
+    Ack now working correctly with sub-zero values
+
+ src/queue.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+commit 79b0bf6c582ad2dd371085f19f80b05984f05f99
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 15 10:04:16 2019 +0200
+
+    shania twain
+
+ src/practice.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+commit 723940df991d329097b1157eea6574be8a126116
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 14 19:18:30 2019 +0200
+
+    100% comme au bulletin de CEB
+
+ src/packet_implem.c    | 18 ++++++++++--------
+ src/packet_interface.h |  2 +-
+ 2 files changed, 11 insertions(+), 9 deletions(-)
+
+commit 9883b6ec0cf37cff9231388267657ea9a79d9d9f
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 18:51:28 2019 +0200
+
+    Fin de l'implémentation de queue et de encode
+
+ src/queue.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit b8ee7a1307030dd25d758c7af648da8c8922ce61
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 14 18:46:40 2019 +0200
+
+    Et Ben, t'es le meilleur mon boy!
+
+ src/packet_implem.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c60dd9662acad8726a88e4a57c6a10564435250d
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 14 18:43:39 2019 +0200
+
+    Calisse
+
+ src/packet_implem.c    | 3 ++-
+ src/packet_interface.h | 3 +++
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit ef612a7a8b46cf6a868c884e0a95025e6fc11977
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 14 18:39:40 2019 +0200
+
+    C'est qui qui veut un gin?
+
+ src/packet_implem.c    | 6 +++---
+ src/packet_interface.h | 4 ++--
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 9b7ee08878d4acfc1f9530987c57b19950f3cac6
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 14 18:35:22 2019 +0200
+
+    Free data dans decode et free dans encode
+
+ .gitignore          |   1 +
+ src/packet_implem.c |   4 +-
+ src/sender          | Bin 8704 -> 0 bytes
+ src/z_old_queue.c   | 248 ----------------------------------------------------
+ 4 files changed, 4 insertions(+), 249 deletions(-)
+
+commit 0c87482cff32933088dc00b94f9689f1d14b3e31
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 18:30:44 2019 +0200
+
+    valgrind fun
+
+ src/practice.c | 48 +++++++++++-------------------------------------
+ src/queue.c    | 19 +++++++------------
+ tests/test.c   | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 75 insertions(+), 49 deletions(-)
+
+commit 9d27b3a6856e8f0c36e9d4b0c6283ce411eafc18
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 18:04:21 2019 +0200
+
+    Queue ready for multiple connections
+
+ src/practice.c | 48 +++++++++++++++++++++++++++++++++++++++++-------
+ src/queue.c    | 11 +++++------
+ 2 files changed, 46 insertions(+), 13 deletions(-)
+
+commit 1a91bd3a9612f80d00308cafe6c4d25de4c573ad
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 14 17:36:31 2019 +0200
+
+    Correction CRC32 TEST DECODE
+
+ .gitignore          |  2 +-
+ src/packet_implem.c | 11 ++++++++++-
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+
+commit c5731e7b62f6045d624801e575f2fbf85924a145
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 17:14:33 2019 +0200
+
+    Test1
+
+ src/practice.c | 23 +++++++++++++++++++++--
+ src/queue.c    |  2 +-
+ 2 files changed, 22 insertions(+), 3 deletions(-)
+
+commit dad3391dcb329c5c01c54aa10dcf7f877eaf2da3
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 14 17:11:27 2019 +0200
+
+    *len -> len
+
+ .gitignore             | 1 +
+ src/packet_implem.c    | 5 +----
+ src/packet_interface.h | 2 +-
+ 3 files changed, 3 insertions(+), 5 deletions(-)
+
+commit 34af20dafc29d399b03d1aa1e346f88cbd88f6c7
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 16:54:09 2019 +0200
+
+    Queue
+
+ src/practice.c | 54 ++++++++++++++++++++++++++++--------------------------
+ src/queue.c    |  1 +
+ 2 files changed, 29 insertions(+), 26 deletions(-)
+
+commit 3ec02e5f4eb5f4d179fa67ecfae621d3a247a190
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 14 16:50:45 2019 +0200
+
+    Programme packet venant d'inginious
+
+ Makefile            |   3 +-
+ src/packet_implem.c | 127 +++++++++++++++++++++-------------------------------
+ 2 files changed, 52 insertions(+), 78 deletions(-)
+
+commit 89c5e604f1ef2095be1e070e3f7903dba7f25123
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 16:49:19 2019 +0200
+
+    QUI VA FAIRE LES MOULES
+
+ src/queue.c | 24 +++++++++++++-----------
+ src/queue.h |  4 ++++
+ 2 files changed, 17 insertions(+), 11 deletions(-)
+
+commit 2c150fff9211809837f539d1c7916aaf5dd5b9a7
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 16:47:03 2019 +0200
+
+    Treat bytestream
+
+ src/queue.c | 27 ++++++++++++---------------
+ 1 file changed, 12 insertions(+), 15 deletions(-)
+
+commit 664f66d073eb0e133d69bc3a50b54b924ff986c7
+Merge: 0c17e24 d414cd9
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 16:40:15 2019 +0200
+
+    Merge branch 'master' of https://github.com/RomainGrx/TRTP-Project
+
+commit 0c17e249c6d20b5166b113b2a9d2a3c8c78b24eb
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 16:40:12 2019 +0200
+
+    Rollback
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit d414cd9710373728c7b530c872f14e0f10758cf7
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 14 16:31:04 2019 +0200
+
+    Queue ready to test
+
+ .gitignore  |  1 +
+ src/queue.c | 15 +++++++++++----
+ 2 files changed, 12 insertions(+), 4 deletions(-)
+
+commit 6cd960681d82cc993caa3971ba32f7415704ecaf
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 12 19:18:10 2019 +0200
+
+    Ready for donwload on raspberry pi
+
+ src/practice.c | 65 ++++++++++++++++++++++++----------------------------------
+ 1 file changed, 27 insertions(+), 38 deletions(-)
+
+commit 93ee2f2634c4f188e85f84c73645ec2308d6a542
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 12 17:15:19 2019 +0200
+
+    READ implementer.txt
+
+ socket_tutorials/implementer.txt | 17 +++++++++++++
+ src/queue.c                      | 55 ++++++++++++++++++++++------------------
+ 2 files changed, 47 insertions(+), 25 deletions(-)
+
+commit ad079e26cb2a3e2fabb69da99d0535de02a1db7d
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 12 17:01:53 2019 +0200
+
+    Lastack edit 2; seems to work
+
+ src/queue.c | 65 ++++++++++++++++++++++++++++++++-----------------------------
+ src/queue.h |  2 +-
+ 2 files changed, 35 insertions(+), 32 deletions(-)
+
+commit 9c1222b2cb72d31f235f3c22dfa448cf0893bfac
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 12 16:50:01 2019 +0200
+
+    Lastack edit 1
+
+ src/practice.c | 62 ++++++++++++++++++++++++++++++++++++----------------------
+ src/queue.c    | 35 +++++++++++++++++++++++++--------
+ 2 files changed, 66 insertions(+), 31 deletions(-)
+
+commit 72d090e19e1462158004aece9f3b2df21df2a3fe
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Fri Oct 11 23:38:02 2019 +0200
+
+    Fonctionnement de length en 16 bits pour encode et decode
+
+ TODO.md                |  1 +
+ src/packet_implem.c    | 71 ++++++++++++++++++--------------------------------
+ src/packet_interface.h |  4 ---
+ 3 files changed, 26 insertions(+), 50 deletions(-)
+
+commit 8dcb32010124bcbec3a06d92bfb82c18fac115f8
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 10 19:18:21 2019 +0200
+
+    Good discussion IPV6
+
+ src/practice.c | 31 +++++++++++++++++++++++--------
+ src/receive.c  | 20 +++++++++++---------
+ 2 files changed, 34 insertions(+), 17 deletions(-)
+
+commit d559380576825d4a094bf9f1e1877bae40fe02cc
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 10 18:50:25 2019 +0200
+
+    Send_ack utilise des paquets et non des ints. (future proof)
+
+ src/practice.c |  19 ++++++---------
+ src/queue.c    |  31 ++++++++++++++---------
+ src/sender     | Bin 0 -> 8704 bytes
+ src/sender.c   |  76 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 104 insertions(+), 22 deletions(-)
+
+commit 7700e7bb8069a320906fa03a17d2029550f6737a
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 10 17:19:55 2019 +0200
+
+    Practice IPV6
+
+ .gitignore     |  1 -
+ TODO.md        |  7 +++++++
+ src/main.c     | 65 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/practice.c | 22 ++++++++------------
+ 4 files changed, 81 insertions(+), 14 deletions(-)
+
+commit 7cc211a15087c16039bf1070ed419455ea931103
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 10 17:18:39 2019 +0200
+
+    queue return
+
+ src/queue.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a57904a54f58fa7f17c04b730fad09107131fc39
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 19:58:29 2019 +0200
+
+    Variable window size OK (je pense)
+
+ src/practice.c | 13 +++++++------
+ src/queue.c    |  7 ++++---
+ src/queue.h    |  4 ++--
+ 3 files changed, 13 insertions(+), 11 deletions(-)
+
+commit e7bb7b592ec6d47eb16afa074b53b86453690e2d
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 19:54:09 2019 +0200
+
+    Variable window size
+
+ src/practice.c | 22 +++++-----------------
+ src/queue.c    | 13 +++++++++++++
+ src/queue.h    | 12 +++++++++++-
+ 3 files changed, 29 insertions(+), 18 deletions(-)
+
+commit 3153c964038e36b2bc6ffacc05132e42c9ab89c0
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 19:33:13 2019 +0200
+
+    add_queue() ajoute une connection entrante.
+
+ src/practice.c |  8 +++++++-
+ src/queue.c    | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/queue.h    |  2 ++
+ 3 files changed, 67 insertions(+), 1 deletion(-)
+
+commit c3dac9966a5e45ab637efb788c1b6cec05c1baa2
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 19:20:12 2019 +0200
+
+    Revert vers quand socket tutorial fonctionnait, en ipv4
+
+ socket_tutorials/server.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f5c6ee88cf2bccee2a26a7933ec6aca8bae457af
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 12:26:41 2019 +0200
+
+    Mon ordi parle en ipv6
+
+ socket_tutorials/client   | Bin 8664 -> 8792 bytes
+ socket_tutorials/client.c |  49 +++++++++++++++++++++++++++++++++++++++++
+ socket_tutorials/server   | Bin 0 -> 12888 bytes
+ socket_tutorials/server.c |  55 ++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 104 insertions(+)
+
+commit 6662c2bfa85407dbeab33231899b6d648babce33
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 12:22:00 2019 +0200
+
+    Socket tutorials
+
+ socket_tutorials/client    | Bin 0 -> 8664 bytes
+ socket_tutorials/gclient.c |  50 +++++++++++++++++++++++++++++++++++++++++++++
+ socket_tutorials/gserv.c   |  41 +++++++++++++++++++++++++++++++++++++
+ socket_tutorials/serv      | Bin 0 -> 8664 bytes
+ 4 files changed, 91 insertions(+)
+
+commit 75d096a348477f589c4e8683aa3d1f7ab8a9c281
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 10:21:43 2019 +0200
+
+    Petit bug des printf dans le log.
+
+ src/queue.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+commit 78a6fbdf7bc652d8fc327197545c2a58e5f8b1e6
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 10:11:02 2019 +0200
+
+    Queue fonctionne a merveille.
+
+ src/practice.c | 21 +++++++++++++--------
+ src/queue.c    |  9 +++++----
+ src/queue.h    |  3 ++-
+ 3 files changed, 20 insertions(+), 13 deletions(-)
+
+commit b073a22aadecd8c67c1167a46e5b55bfc1806480
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 09:59:52 2019 +0200
+
+    Résolution des soucis de merge, practice et queue ok
+
+ Makefile       |  4 ++--
+ src/practice.c | 17 +++++++++++++----
+ src/queue.c    |  2 +-
+ 3 files changed, 16 insertions(+), 7 deletions(-)
+
+commit 22e1af5c93b26a60a1fef14b00785b866362869e
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 09:56:22 2019 +0200
+
+    a
+
+ src/queue.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 258cc5843724282e000871be4dce45eaa39179d2
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 09:56:03 2019 +0200
+
+    aaa
+
+ src/queue.c | 36 +++++++++++++++++++-----------------
+ 1 file changed, 19 insertions(+), 17 deletions(-)
+
+commit ab91ac776bee73c0f8c0dd6b8f90418a5da0f5c7
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 9 09:51:20 2019 +0200
+
+    Sacré romain
+
+ .gitignore  |   5 ++--
+ src/queue   | Bin 0 -> 13544 bytes
+ src/queue.c |  75 +++++++++++++++++++++++++++++++++++++-----------------------
+ src/queue.h |  12 ++++++++--
+ 4 files changed, 59 insertions(+), 33 deletions(-)
+
+commit b1b607a3d7ef6a2709c4b866d0b403a1d6d6ab42
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 21:30:57 2019 +0200
+
+    Queue pret
+
+ src/queue.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b23e4b3db0b2f5cc34a08cc565a5edb007c747f2
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 21:27:49 2019 +0200
+
+    Queue prêt.
+
+ src/practice.c |  1 +
+ src/queue.c    |  3 ++-
+ src/queue.h    | 71 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 74 insertions(+), 1 deletion(-)
+
+commit e847ca3f93c49d9eeb8143d10a76130cb757997c
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 21:06:07 2019 +0200
+
+    Queue ready for multiple connections
+
+ src/{temp.C => queue.c} |   0
+ src/tempfuck.C          | Bin 17323 -> 0 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cf36bcf07f7ba8ac0d7995d4c91aed6886099fcf
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 21:05:16 2019 +0200
+
+    temp commit
+
+ src/queue                      | Bin 13376 -> 0 bytes
+ src/temp                       | Bin 13144 -> 0 bytes
+ src/temp.C                     | 143 ++++++++++++++++++++++++++++++++++++++---
+ src/tempfuck.C                 | Bin 0 -> 17323 bytes
+ src/{queue.c => z_old_queue.c} |   6 --
+ 5 files changed, 133 insertions(+), 16 deletions(-)
+
+commit 27f11f4d8fb2036baeb1e334d8b75cb9040bee84
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 19:17:12 2019 +0200
+
+    ça avance
+
+ src/temp   | Bin 8728 -> 13144 bytes
+ src/temp.C | 116 +++++++++++++++++++++++++++++++++++++++++++++++--------------
+ 2 files changed, 89 insertions(+), 27 deletions(-)
+
+commit 32352c7baa7b20e8804b122174d6feb8813c9685
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 18:36:25 2019 +0200
+
+    Qui a la plus grosse?
+
+ src/queue   | Bin 13376 -> 13376 bytes
+ src/queue.c |   8 ++++----
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit e2e48d569fa6eb3510d3aa35287f759526cfe391
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 18:30:26 2019 +0200
+
+    queue est inviolable pour n=1
+    temp non complet
+
+ src/a.out   | Bin 8784 -> 0 bytes
+ src/main.c  |  65 ------------------------------------------------------------
+ src/queue   | Bin 13392 -> 13376 bytes
+ src/queue.c |  55 ++++++++++++++++++++++++++++----------------------
+ src/temp    | Bin 0 -> 8728 bytes
+ src/temp.C  |  42 ++++++++++++++++++++-------------------
+ 6 files changed, 53 insertions(+), 109 deletions(-)
+
+commit c3a2a41fd834b0a4b09b58afe2f909341680770e
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 8 17:08:05 2019 +0200
+
+    socket_init V0
+
+ .gitignore     |  5 ++++-
+ Makefile       | 15 +++++++--------
+ src/practice.c |  1 +
+ src/receive.c  | 30 +++++++++++++++++++++++++-----
+ src/receive.h  | 15 ++++++++-------
+ 5 files changed, 45 insertions(+), 21 deletions(-)
+
+commit cd63e43437995ed8ad4ca1754ec6a3805ba63c4a
+Merge: f1e8d8d 4b9e69f
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 8 15:39:15 2019 +0200
+
+    Merge branch 'master' of https://github.com/RomainGrx/TRTP-Project
+
+commit f1e8d8d33921657e7d8ef44dc8b1c039ba939e86
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 8 15:38:50 2019 +0200
+
+    IPV6_translater V0
+
+ Makefile       |  6 +++---
+ src/practice.c | 13 +++++++------
+ src/receive.c  | 42 ++++++++++++++++++++++++++++++++++++++++--
+ src/receive.h  | 20 ++++++++++++++++++++
+ 4 files changed, 70 insertions(+), 11 deletions(-)
+
+commit 4b9e69f3b22c55b5fd1a62cd76b1fd9e645283a6
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 14:09:40 2019 +0200
+
+    hihi
+
+ src/temp.C | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 7b38931ea80553a39d9b35af21f29d9b55235948
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Tue Oct 8 12:26:15 2019 +0200
+
+    done:
+    queue initialiser toutes les variables
+    
+    todo:
+    adapter le reste du programme :)
+
+ src/a.out   | Bin 0 -> 8784 bytes
+ src/queue   | Bin 0 -> 13392 bytes
+ src/queue.c |  25 +++++++++-----
+ src/temp.C  | 113 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 129 insertions(+), 9 deletions(-)
+
+commit 0b115fada20953e27fcbfb52058fbef7030e3083
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 8 12:04:54 2019 +0200
+
+    Makefile propre avec toutes les dépendances
+
+ Makefile       |  85 ++++++++++----------
+ src/practice.c |  34 +++++---
+ src/queue.h    |   0
+ src/receive.c  | 240 +--------------------------------------------------------
+ src/receive.h  |   0
+ 5 files changed, 71 insertions(+), 288 deletions(-)
+
+commit 4408a75a4f8531c4501efbfe39e77715ddcd2e58
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 8 11:03:02 2019 +0200
+
+    Plus les fichiers recieve et les exec
+
+ Ex            | Bin 14332 -> 0 bytes
+ Recieve       | Bin 13280 -> 0 bytes
+ src/recieve   | Bin 13280 -> 0 bytes
+ src/recieve.c | 240 ----------------------------------------------------------
+ 4 files changed, 240 deletions(-)
+
+commit 4e2a2b7677c371aa3f91cb1cd9990e7e04dd4577
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 8 10:59:13 2019 +0200
+
+    Ajout de queue.c
+
+ Makefile      |   8 +-
+ src/queue.c   | 240 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/receive.c | 240 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 484 insertions(+), 4 deletions(-)
+
+commit 4227e06fc62cc416632199152810c77487cf1964
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 8 08:34:14 2019 +0200
+
+    Main opérationnelle
+
+ .gitignore |  7 +++++--
+ Makefile   |  7 +++++--
+ src/main.c | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 3 files changed, 63 insertions(+), 6 deletions(-)
+
+commit cb7175141d5390e154f5dae1a32bf1b1629fd130
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 7 16:33:35 2019 +0200
+
+    Fonctionnement des targets main, test, practice et ben dans le Makefile
+
+ Makefile   | 45 ++++++++++++++++++++++++++++-----------------
+ README.md  |  1 -
+ src/main.c | 14 ++++++++++++++
+ 3 files changed, 42 insertions(+), 18 deletions(-)
+
+commit 45d0f400e3cf3c3b89779d187e655663a087059b
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Mon Oct 7 11:31:12 2019 +0200
+
+    Vive les gros zozos
+
+ Makefile            |  11 +++++++++++
+ Recieve             | Bin 0 -> 13280 bytes
+ src/packet_implem.c |   2 +-
+ src/recieve         | Bin 13280 -> 13280 bytes
+ src/recieve.c       |  15 +++++++++++----
+ tests/test.c        |   3 ++-
+ 6 files changed, 25 insertions(+), 6 deletions(-)
+
+commit 351e9d0ec63f1df8f0c91ede85591395029b8e2b
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Mon Oct 7 09:26:49 2019 +0200
+
+    pkt_encode et pkt_decode fonctionnelle pour Length encodé sur 7 bits
+    Rajouté l'executable pour le fichier test dans le makefile
+
+ .gitignore             |   3 +-
+ Makefile               |  15 +++++
+ TODO.md                |   3 +-
+ src/packet_implem.c    | 165 +++++++++++++++++++++++--------------------------
+ src/packet_interface.h |   2 +
+ tests/test.c           |  70 +++++++++++++++++++++
+ 6 files changed, 170 insertions(+), 88 deletions(-)
+
+commit 4846f55cdaec80f620bf96093853cef2f18bf40e
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sun Oct 6 19:15:12 2019 +0200
+
+    Fonction pkt_decode fonctionne pour L=0 (mettre au clair hton pour 15 bits)
+
+ TODO.md                |  10 ++-
+ src/packet_implem.c    | 232 ++++++++++++++++++++++++++++++++++++-------------
+ src/packet_interface.h |  19 +++-
+ src/practice.c         | 107 ++++++++---------------
+ 4 files changed, 231 insertions(+), 137 deletions(-)
+
+commit 909a1b485416e7d94d022e274c75df5071666e5c
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sun Oct 6 13:32:21 2019 +0200
+
+    Fonction faite et testée : varuint_decode, varuint_encode, varuint_len, varuint_predict_len, predict_header_length.
+    Ajout de la fonction (dans le MAKEFILE) qui va stocker la sortie stderr
+    dans un fichier et l'afficher si il contient des erreurs.
+
+ Makefile               |   4 +-
+ TODO.md                |  49 ++++++++++++-----------
+ src/packet_implem.c    | 105 ++++++++++++++++++++++++++++++++-----------------
+ src/packet_interface.h |  11 +++---
+ src/stderr.txt         |   0
+ tests/test.c           |  17 ++++++++
+ énoncé.pdf           | Bin 426681 -> 460535 bytes
+ 7 files changed, 119 insertions(+), 67 deletions(-)
+
+commit 54768ea307eb4630356a96da583b4f5ca8b3055e
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sun Oct 6 10:47:36 2019 +0200
+
+    Prend en compte le nombre de bits sur lequel la window est encodée.
+    Va voir les tests ils sont super optimisés
+
+ src/recieve   | Bin 13280 -> 13280 bytes
+ src/recieve.c |  41 ++++++++++++++++++++++++++++++++---------
+ 2 files changed, 32 insertions(+), 9 deletions(-)
+
+commit e07562bf31927259704fb1920404ea8e08212d66
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sun Oct 6 10:24:53 2019 +0200
+
+    Je fais des bêtises avec la taille max de window
+
+ src/recieve   | Bin 13240 -> 13280 bytes
+ src/recieve.c |  18 +++++++++---------
+ 2 files changed, 9 insertions(+), 9 deletions(-)
+
+commit b4fea43abda0207c7866f88ebf954291ec442e96
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sun Oct 6 10:07:23 2019 +0200
+
+    Optimised the buffer (Complexty O(n) to O(1) when adding node)
+
+ src/recieve   | Bin 13208 -> 13240 bytes
+ src/recieve.c |   7 +++----
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+
+commit baf1d3dccaacf2f46582a95fcc4c8447a3777303
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 5 17:44:25 2019 +0200
+
+    Ajout de commentaires.
+    
+    Valgrind me dit que j'ai fait quelques petits oublis de free oupsy
+    doupsy
+
+ src/recieve   | Bin 13168 -> 13208 bytes
+ src/recieve.c |  49 ++++++++++++++++++++++++++++++++-----------------
+ 2 files changed, 32 insertions(+), 17 deletions(-)
+
+commit 319794ec46e0070a928e408ba8614d518f9dbfe2
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 5 17:29:29 2019 +0200
+
+    buffer fonctionne
+
+ src/recieve   | Bin 13168 -> 13168 bytes
+ src/recieve.c |   6 ++++++
+ 2 files changed, 6 insertions(+)
+
+commit fdc61ab0ce9004b680660cd945a562d670357087
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 5 17:25:59 2019 +0200
+
+    Buffer fonctionne correctemen
+    
+    Ne prend pas encore en compte le numéro de serie seqnum max (ne retourne
+    pas a 0)
+
+ src/recieve   | Bin 12984 -> 13168 bytes
+ src/recieve.c |  62 +++++++++++++++++++++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 59 insertions(+), 3 deletions(-)
+
+commit 2616413dd07c825a81e210673c553120178c02b9
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Sat Oct 5 16:16:36 2019 +0200
+
+    Backup:
+    Done: mainframe
+    todo:
+    Create buffer (linked list)
+    Test the recursive call when emptying buffer
+    
+    Consider window size
+
+ Makefile       |   1 +
+ src/receiver.c |   0
+ src/recieve    | Bin 0 -> 12984 bytes
+ src/recieve.c  | 134 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 135 insertions(+)
+
+commit d90c2bc056e24173d2f2d4e0953bb4bdf0dd4017
+Merge: 5d56ec2 4217684
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 5 11:42:34 2019 +0200
+
+    Merge branch 'master' of https://github.com/RomainGrx/TRTP-Project
+
+commit 5d56ec28cd3584bf7700319a6d94f1ef7f01c869
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Sat Oct 5 11:42:29 2019 +0200
+
+    TODO
+
+ .gitignore          |   1 +
+ TODO.md             |  12 +++---
+ src/packet_implem.c |  13 +++---
+ src/practice.c      | 117 ++++++++++++++++++++++++++++++++++++++++------------
+ 4 files changed, 105 insertions(+), 38 deletions(-)
+
+commit 4217684b04be46c7229e3039248635171e4cfc8f
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Thu Oct 3 17:06:43 2019 +0200
+
+    todo
+
+ TODO.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit ffaa0e06bf88a396969cbb3a74cb6d72f5164750
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 3 15:59:47 2019 +0200
+
+    Fonction pkt_decode fonctionelle sans conditions sur LENGTH, TR, ...
+
+ Ex                     | Bin 9936 -> 14332 bytes
+ TODO.md                |   6 ++--
+ src/packet_implem.c    |  80 ++++++++++++++++++++++++++++++++++++++-----------
+ src/packet_interface.h |   6 ++--
+ src/practice.c         |  55 ++++++++++++++++++++++++++++++++--
+ 5 files changed, 121 insertions(+), 26 deletions(-)
+
+commit 8332b9e73ee1e97a5936078ce27cf3dac4f18b72
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Thu Oct 3 11:44:34 2019 +0200
+
+    Rajout de Test Code dans TODO.md
+    Verif Get et Set (WINDOW, SEQNUM, LENGTH)
+    Passage de la struct pkt dans le header
+
+ Ex                     | Bin 9936 -> 9936 bytes
+ TODO.md                |  63 +++++++++++++++++++++++++++++++++++++++++++++----
+ src/packet_implem.c    |  55 ++++++++++++++++++++++++++----------------
+ src/packet_interface.h |  14 +++++++++++
+ src/practice.c         |   5 +++-
+ 5 files changed, 112 insertions(+), 25 deletions(-)
+
+commit 2502062d2f839a3a451fa5ee09503f1131c59fc4
+Merge: df4783f 154ba6a
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 2 17:06:19 2019 +0200
+
+    Merge branch 'master' of https://github.com/RomainGrx/TRTP-Project
+
+commit df4783f6a341462a033d150e4c2d726c9568e829
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 2 17:06:16 2019 +0200
+
+    Ajout de binary_decode (L, LENGTH)
+    Ajout d'un fichier practice et d'un makefile
+
+ Ex                     | Bin 0 -> 9936 bytes
+ Makefile               |  19 ++++++++
+ TODO.md                |  17 ++++++-
+ src/packet_implem.c    | 123 +++++++++++++++++++++++++++++++------------------
+ src/packet_interface.h |   8 ++++
+ src/practice.c         |  12 +++++
+ src/receiver.c         |   0
+ 7 files changed, 131 insertions(+), 48 deletions(-)
+
+commit 154ba6a7cc002aee63f649ef9449c42ddf763d9e
+Author: Beben107700 <ben.delcoigne@gmail.com>
+Date:   Wed Oct 2 14:05:39 2019 +0200
+
+    test github
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 14ca4a0abe99177ba00864e4aae1b7b48aeeef86
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 2 13:02:41 2019 +0200
+
+    Change binary_get to binary_decode (TYPE, TR, WINDOW)
+
+ TODO.md                | 8 ++++----
+ src/packet_implem.c    | 6 +++---
+ src/packet_interface.h | 6 +++---
+ 3 files changed, 10 insertions(+), 10 deletions(-)
+
+commit 92d88a7cec5be89a1ed698895def9ad970d3c7d2
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 2 12:48:44 2019 +0200
+
+    Ajout des fonctions de traitement binaire pour le premier byte (TYPE, TR, WINDOW)
+    
+    Prémices de pkt_decode
+
+ TODO.md                | 10 ++++++++--
+ src/packet_implem.c    | 30 +++++++++++++++++++++++++++++-
+ src/packet_interface.h | 17 +++++++++++++++++
+ 3 files changed, 54 insertions(+), 3 deletions(-)
+
+commit c2e4ee2ca66c78540b0c950bf91ccf77320009c6
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 2 10:20:19 2019 +0200
+
+    All Getters and Setters : DONE
+    New Setters(PAYLOAD)
+    New Getters(LENGTH, TIMESTAMP, CRC1, PAYLOAD, CRC2)
+
+ TODO.md             | 12 ++++++------
+ src/packet_implem.c | 18 ++++++++++++------
+ 2 files changed, 18 insertions(+), 12 deletions(-)
+
+commit b8a49fef6939533f904c3784686216f2225dec5a
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Oct 2 10:00:46 2019 +0200
+
+    Getters(TYPE, TR, WINDOW, SEQNUM, LENGTH) et Setters(TYPE, TR, WINDOW, SEQNUM, LENGTH, TIMESTAMP, CRC1, CRC2)
+
+ TODO.md             | 20 ++++++++++----------
+ src/packet_implem.c | 32 ++++++++++++++++++++------------
+ 2 files changed, 30 insertions(+), 22 deletions(-)
+
+commit c25215658446577487c46c51b0c3fdad93454ac1
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 1 22:46:51 2019 +0200
+
+    TODO
+
+ TODO.md | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+commit 697f8885fbf08bd915386cc8a5d8145ece183a54
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 1 18:02:09 2019 +0200
+
+    Remis TODO normal
+
+ .gitignore |   1 +
+ TODO.md    | 124 ++++++++++++++++---------------------------------------------
+ 2 files changed, 32 insertions(+), 93 deletions(-)
+
+commit 55435427162406d87758f6b58529a99c347d5755
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 1 17:45:07 2019 +0200
+
+    TODO
+
+ todo.md => TODO.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5559807a28fc2e6d52cf4588afce0b3fc5444574
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 1 17:43:13 2019 +0200
+
+    Rearrange TODO.md et README.md
+
+ README.md |   5 +++
+ todo.md   | 124 ++++++++++++++++++++++++++++++++++++++++++++++----------------
+ 2 files changed, 98 insertions(+), 31 deletions(-)
+
+commit d042a3188a9c96052590e859c18895321862190c
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 1 17:23:26 2019 +0200
+
+    Ajout des setters : type, window, seqnum et length
+
+ src/packet_implem.c | 24 ++++++++++++++++++------
+ todo.md             | 23 ++++++++++++++++++++++-
+ 2 files changed, 40 insertions(+), 7 deletions(-)
+
+commit dc2135eb47f3fb51537be1499dd76435885bf22d
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 1 16:27:52 2019 +0200
+
+    Ajout de pkt_del
+
+ src/packet_implem.c | 3 ++-
+ todo.md             | 4 +---
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+
+commit 4ffbf8f08de2228346385a8d65f665eef6a75863
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 1 16:18:49 2019 +0200
+
+    Ajout de la structure du package dans packet_implem.c
+
+ src/packet_implem.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+commit e75654bafb1ba1f811d25c25b68d76b20c052400
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Tue Oct 1 16:13:55 2019 +0200
+
+    Ajout packet_implem.c, packet_interface.h, todo.md
+    
+    Implémentation de la struct pkt et de la fonction pkt_new
+
+ src/packet_implem.c    | 164 +++++++++++++++++++++++++++++++++++++++++++++
+ src/packet_interface.h | 177 +++++++++++++++++++++++++++++++++++++++++++++++++
+ todo.md                |  29 ++++++++
+ 3 files changed, 370 insertions(+)
+
+commit ecb47b64d1a0471c3dc63fce18e702d1c0c4f640
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Fri Sep 27 17:36:16 2019 +0200
+
+    Ajout des répertoires src/ et tests/ ainsi qu'un Makefile
+
+ Makefile | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 62dd917696029ffea98c0e0fb269c5c15c20ce73
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Sep 25 22:19:40 2019 +0200
+
+    Revert "Revert "New submodule test""
+    
+    This reverts commit 2128de3d484068aeec33c8747cadaffaa4bebb00.
+
+ .gitignore               | 1 -
+ .gitmodules              | 4 ++--
+ 5d8bc368e59ea2000171c6c1 | 1 -
+ Latex/main.tex           | 3 +--
+ 4 files changed, 3 insertions(+), 6 deletions(-)
+
+commit 2128de3d484068aeec33c8747cadaffaa4bebb00
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Sep 25 22:19:32 2019 +0200
+
+    Revert "New submodule test"
+    
+    This reverts commit 0d55530ca3db1689fa31bee09129cc3e48847f35.
+
+ .gitignore               | 1 +
+ .gitmodules              | 4 ++--
+ 5d8bc368e59ea2000171c6c1 | 1 +
+ Latex/main.tex           | 3 ++-
+ 4 files changed, 6 insertions(+), 3 deletions(-)
+
+commit 0d55530ca3db1689fa31bee09129cc3e48847f35
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Sep 25 22:15:51 2019 +0200
+
+    New submodule test
+
+ .gitignore               | 1 -
+ .gitmodules              | 4 ++--
+ 5d8bc368e59ea2000171c6c1 | 1 -
+ Latex/main.tex           | 3 +--
+ 4 files changed, 3 insertions(+), 6 deletions(-)
+
+commit 20703c952d0a2541b4364ae502e7633b8e73bd4b
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Sep 25 22:00:09 2019 +0200
+
+    add Latex/main.tex
+
+ Latex/main.tex | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit 5b1af90dbfd98e4a23b97fc397ffe1dd9088d158
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Sep 25 21:58:14 2019 +0200
+
+    .gitmodules
+
+ .gitmodules | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit ffd7c2a8cb4925fa0c80a25b1e60087ce1bd9ca2
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Sep 25 21:54:33 2019 +0200
+
+    Test Latex submodule
+
+ .gitignore               | 1 +
+ .gitmodules              | 3 +++
+ 5d8bc368e59ea2000171c6c1 | 1 +
+ 3 files changed, 5 insertions(+)
+
+commit 6e20090afdb82f6dd7190dff89a76545a8a61fae
+Author: Romain Graux <romain.graux@student.uclouvain.be>
+Date:   Wed Sep 25 21:41:56 2019 +0200
+
+    First commit
+
+ .gitignore   |   1 +
+ README.md    |   0
+ énoncé.pdf | Bin 0 -> 426681 bytes
+ 3 files changed, 1 insertion(+)
